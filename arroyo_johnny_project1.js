@@ -76,4 +76,12 @@ if (gp > p) {
 	return false;
 };
 
+//How to replace character in a string
+var slash = "/";
+var myOldString = "a,b,c";
+var myNewString = myOldString.replace(/,/g, slash);
+
+console.log("Old string =  " + myOldString); 
+console.log("New string = " + myNewString);
+
 alert("JavaScript works!");
