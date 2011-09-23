@@ -47,6 +47,22 @@ if (today.getMonth()==10 && today.getDate()>24)
 	var one_day=1000*60*60*24
 	console.log(Math.ceil((thanksgiving.getTime()-today.getTime())/(one_day))+
 	" days left until Thanksgiving!!");
+	
+//How to validate email
+function emailValidator(elem, helperMsg){
+	var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	if(elem.value.match(emailExp)){
+		return true;
+	}else{
+		alert(helperMsg);
+		elem.focus();
+		return false;
+	}
+};
 
+//How to set number of decimal points
+var tesNumber = 343427.1264827
+
+console.log(tesNumber.fixed(2));
 
 alert("JavaScript works!");
