@@ -95,6 +95,12 @@ for (var counter = 0; counter < testNumbers.length; counter++) {
 		}
 };	 
 			
-		
+//How to return number from a string	
+var testString = "35 apples";
+numvar = parseInt(testString);
+
+console.log(numvar);
+
+
 
 alert("JavaScript works!");
