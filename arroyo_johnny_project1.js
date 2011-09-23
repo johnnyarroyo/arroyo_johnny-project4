@@ -39,6 +39,14 @@ var yankees = ["awesome", 100, "best", 62, true]
 var totalGames = yankees[1] + yankees[3]
 console.log(totalGames)
 
+//How many day until thanksgiving?!
+today=new Date()
+var thanksgiving=new Date(today.getFullYear(), 10, 24) 
+if (today.getMonth()==10 && today.getDate()>24) 
+	birthday.setFullYear(thanksgiving.getFullYear()+1) 
+	var one_day=1000*60*60*24
+	console.log(Math.ceil((thanksgiving.getTime()-today.getTime())/(one_day))+
+	" days left until Thanksgiving!!");
 
 
 alert("JavaScript works!");
