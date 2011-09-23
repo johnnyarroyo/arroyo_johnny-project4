@@ -101,6 +101,38 @@ numvar = parseInt(testString);
 
 console.log(numvar);
 
+//How to title-case a string. I got help with this one but couldn't figure out how to check it in javascript.
+/*
+<html>
+<head>
+<script type="text/javascript">
+*/function displayResult()
+{
+document.getElementById("p1").style.textTransform="capitalize";
+}
+/*</script>
+</head>
+<body>
 
+<p id="p1">"This is pretty cool."</p>
+<br />
+
+<button type="button" onclick="displayResult()">Convert text</button>
+
+</body>
+</html>*/
+
+//How to validate URL
+function validate(form) { 
+	var form = "http://www.facebook.com";
+    var v = new RegExp(); 
+    v.compile("^[A-Za-z]+://[A-Za-z0-9-_]+\\.[A-Za-z0-9-_%&\?\/.=]+$"); 
+    if (!v.test(form["URL"].value)) { 
+        alert("You must supply a valid URL."); 
+        return false; 
+           
+    };
+} 
+console.log(validate());
 
 alert("JavaScript works!");
