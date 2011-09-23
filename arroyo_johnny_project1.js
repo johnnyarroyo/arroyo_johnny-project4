@@ -63,6 +63,17 @@ function emailValidator(elem, helperMsg){
 //How to set number of decimal points
 var tesNumber = 343427.1264827
 
+//How to get number that is inside a certain percent of another number
 console.log(tesNumber.fixed(2));
+
+var x = 2;
+var y= 10;
+var gp = .35;
+var p = x/y;
+if (gp > p) {
+	console.log("x falls within");
+} else {
+	return false;
+};
 
 alert("JavaScript works!");
