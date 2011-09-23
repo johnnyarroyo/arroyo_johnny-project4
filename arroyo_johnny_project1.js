@@ -84,4 +84,17 @@ var myNewString = myOldString.replace(/,/g, slash);
 console.log("Old string =  " + myOldString); 
 console.log("New string = " + myNewString);
 
+//How to find the smallest integer larger than given number
+var testNumbers = [2,6,4,1,3,9];
+var givenNumber = 5
+testNumbers.sort()
+
+for (var counter = 0; counter < testNumbers.length; counter++) {
+		if (testNumbers[counter] > givenNumber) {
+			console.log(testNumbers[counter]); break;
+		}
+};	 
+			
+		
+
 alert("JavaScript works!");
